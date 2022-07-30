@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./main.css" />
 
     <title>Junaga</title>
     <link rel="icon" href="./pics/favicon.png" />
@@ -24,13 +25,24 @@
 
   <body>
     <nav>
-      <header>
+      <p>all my links</p>
+
+      <a href="/" class="home">
         <img src="./pics/profile-pic.jpg" />
-        <a href="/">junaga.name</a>
-      </header>
+        <span>junaga.name</span>
+      </a>
+      <a href="https://github.com/junaga">
+        <img src="./pics/github.png" class="icon" />
+        <span>github.com/junaga</span>
+      </a>
+      <a href="https://discord.com/users/365063026166071296">
+        <img src="./pics/discord.svg" class="icon" />
+        <span>@junaga#8033</span>
+      </a>
     </nav>
-    <!-- Add your links -->
-    <!-- Add your playlists -->
+    <main>
+      <!-- Add your playlists -->
+    </main>
   </body>
 
   <style>
@@ -38,50 +50,54 @@
       width: max-content;
       height: 100%;
 
-      /* https://picular.co/office%20light%20yellow */
-      background-color: #dccbaa;
-      /* shadow */
-      box-shadow: 0px 0px 10px #000;
+      background-color: #fcf8e8;
+      box-shadow: 0px 0px 2px #000;
+
+      display: grid;
+      grid-auto-rows: max-content;
+      justify-items: start;
+      row-gap: 10px;
     }
 
-    nav > header {
-      padding-inline: 1.5vw;
-      padding-top: 2vh;
+    nav > a {
+      padding-inline: 1vw;
 
       display: grid;
       grid-template-columns: max-content 1fr;
+      column-gap: 4px;
+      align-items: center;
+    }
+    nav > p {
+      padding-block: 4px;
+      justify-self: end;
+      padding-right: 2vw;
+
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      /* color: rgba(0, 0, 0, 80%); */
+      color: darkslategrey;
+    }
+
+    a.home {
+      /* overwrite */
       align-items: end;
-    }
-    nav > header > a {
-      color: unset;
-      /* transparent text shadow */
-      /* text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1); */
+      column-gap: 6px;
+
       font-size: 24px;
-      font-weight: 600;
-      text-decoration-line: none;
 
-      margin-left: 4px;
-      padding: 2px;
-
-      border: 1px solid #00000000;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #000;
     }
-    nav > header > a:hover {
-      text-decoration-line: underline;
-      text-decoration-thickness: 3px;
-
-      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-      /* inset border */
-      border: inset 1px #cebea1;
+    a.home:hover {
+      text-decoration-thickness: 2px;
     }
-
-    nav > header > img {
+    a.home > img {
       width: 50px;
       height: 50px;
 
       border: 1px solid rgb(131, 107, 1);
       border-radius: 50%;
-      /* cool shadow */
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     }
   </style>
 </html>
