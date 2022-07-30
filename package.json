@@ -1,6 +1,9 @@
 {
   "private": true,
   "type": "module",
+  "scripts": {
+    "build": "echo 'Successfully built'"
+  },
   "dependencies": {
     "firebase-tools": "^11.4.0"
   }
