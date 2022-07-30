@@ -26,7 +26,7 @@
     <nav>
       <header>
         <img src="./profile-pic.jpg" />
-        <h2>junaga.name</h2>
+        <a href="/">junaga.name</a>
       </header>
     </nav>
     <!-- Add your links -->
@@ -38,7 +38,8 @@
       width: max-content;
       height: 100%;
 
-      background-color: #7c7c7c;
+      /* https://picular.co/office%20light%20yellow */
+      background-color: #dccbaa;
       /* shadow */
       box-shadow: 0px 0px 10px #000;
     }
@@ -48,22 +49,39 @@
       padding-top: 2vh;
 
       display: grid;
-      align-items: end;
       grid-template-columns: max-content 1fr;
+      align-items: end;
     }
-    nav > header > h2 {
-      margin-left: 4px;
-      font-size: 24px;
+    nav > header > a {
+      color: unset;
       /* transparent text shadow */
-      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      /* text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1); */
+      font-size: 24px;
+      font-weight: 600;
+      text-decoration-line: none;
+
+      margin-left: 4px;
+      padding: 2px;
+
+      border: 1px solid #00000000;
     }
+    nav > header > a:hover {
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
+
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+      /* inset border */
+      border: inset 1px #cebea1;
+    }
+
     nav > header > img {
-      /* cool shadow */
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      border: 2px solid rgb(73, 60, 0);
       width: 50px;
       height: 50px;
+
+      border: 1px solid rgb(131, 107, 1);
       border-radius: 50%;
+      /* cool shadow */
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     }
   </style>
 </html>
