@@ -1,0 +1,12 @@
+a {
+  color: unset;
+  text-decoration-line: none;
+}
+a:hover {
+  text-decoration-line: underline;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
