@@ -2,7 +2,6 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "echo 'Successfully built'",
 		"fmt": "prettier --write ./"
 	},
 	"dependencies": {
