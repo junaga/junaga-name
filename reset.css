@@ -1,28 +1,28 @@
 body,
 body * {
-  box-sizing: border-box;
-  margin: 0px;
-  /* don't `economy` print. Include background and decorations, as is. */
-  -webkit-print-color-adjust: exact;
+	box-sizing: border-box;
+	margin: 0px;
+	/* don't `economy` print. Include background and decorations, as is. */
+	-webkit-print-color-adjust: exact;
 }
 
 html,
 body {
-  height: 100%;
+	height: 100%;
 }
 
 img {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 table {
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
 ul {
-  list-style-type: none;
-  padding: 0px;
+	list-style-type: none;
+	padding: 0px;
 }
 button {
-  cursor: pointer;
-  font: inherit;
+	cursor: pointer;
+	font: inherit;
 }
