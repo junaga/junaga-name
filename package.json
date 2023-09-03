@@ -2,10 +2,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "echo 'Successfully built'"
+    "build": "echo 'Successfully built'",
+    "fmt": "prettier --write ./"
   },
   "dependencies": {
     "firebase-tools": "^11.4.0",
     "prettier": "^3.0.3"
-  }
+  },
+  "prettier": {
+		"useTabs": true,
+		"semi": false,
+		"trailingComma": "none"
+	}
 }
